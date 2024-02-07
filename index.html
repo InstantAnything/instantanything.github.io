@@ -103,26 +103,98 @@
     </div>
   </section>
 
+  <section class="hero teaser">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <img src="./static/documents/overview.png" alt="Teaser Image" height="100%">
+        <h2 class="subtitle has-text-centered">
+          Overview of our diverse applications, all in one.
+        </h2>
+      </div>
+    </div>
+  </section>
 
   <section class="hero teaser">
     <div class="hero-body">
       <div class="container is-max-desktop">
-        <img src="./static/documents/e1.png" alt="Teaser Image" height="100%">
+        <img src="./static/documents/style.png" alt="Teaser Image" height="100%">
         <h2 class="subtitle has-text-centered">
-          InstantAnything for any object in any style.
+          Any object in any style.
         </h2>
-        <img src="./static/documents/e2.png" alt="Teaser Image" height="100%">
+        <img src="./static/documents/position.png" alt="Teaser Image" height="100%">
         <h2 class="subtitle has-text-centered">
-          InstantAnything for any object in any position.
+          Any object in any position.
         </h2>
-        <img src="./static/documents/e3.png" alt="Teaser Image" height="100%">
+        <img src="./static/documents/multi-sub.png" alt="Teaser Image" height="100%">
         <h2 class="subtitle has-text-centered">
-          InstantAnything for interpolation between two objects.
+          Multiple references synthesis: put multiple objects in one image.
         </h2>
-
+        <img src="./static/documents/interpolation1.png" alt="Teaser Image" height="100%">
+        <h2 class="subtitle has-text-centered">
+          Multi-modality editability: initialize with prompt and increase strength of reference image.
+        </h2>
+        <img src="./static/documents/interpolation2.png" alt="Teaser Image" height="100%">
+        <h2 class="subtitle has-text-centered">
+          Interpolation between two objects.
+        </h2>
       </div>
     </div>
   </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Story-telling Generation</h2>
+
+          <div class="container is-max-desktop">
+            <img src="./static/documents/story1.png" alt="Image0" height="100%">
+          </div>
+
+          <div class="content has-text-centered">
+            <p>
+              A showcase of story-telling: Tesla and SpaceX.
+            </p>
+          </div>
+
+          <div class="container is-max-desktop">
+            <img src="./static/documents/story2.png" alt="Image0" height="100%">
+          </div>
+
+          <div class="content has-text-centered">
+            <p>
+              A showcase of story-telling: Dragon Ball.
+            </p>
+          </div>
+
+          <div class="container is-max-desktop">
+
+            <img id="gif-image" src="./static/documents/story.gif" alt="Image0" height="100%">
+            <script>
+              function loopGif() {
+                var img = document.getElementById("gif-image");
+                img.src = "./static/documents/story.gif";
+                setTimeout(loopGif, 10000);
+              }
+              document.getElementById("gif-image").addEventListener("click", function() {
+                loopGif();
+              });
+            </script>
+          </div>
+
+          <div class="content has-text-centered">
+            <p>
+              A short story-telling video about Tesla and SpaceX. Click to restart.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+  </section>
+
 
   <footer class="footer">
     <div class="container">
